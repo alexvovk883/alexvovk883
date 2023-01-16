@@ -4,8 +4,8 @@
 
 ## Fundamental concepts
 
-| Syntax               | Statements            | Functions             | Data structures     | Process & style      |
-|----------------------|-----------------------|-----------------------|---------------------|----------------------|
+| Syntax               | Statements             | Functions             | Data structures      | Process & style      |
+|----------------------|------------------------|-----------------------|----------------------|----------------------|
 | 🟩 value             | 🟩 if                 | 🟩 recursion          | 🟩 array            | 🟦 refactoring       |
 | 🟩 identifier        | 🟩 loops              | 🟩 function           | 🟩 instance         | 🟦 code review       |
 | 🟩 variable          | 🟦 assignment         | 🟩 return             | 🟩 object           | 🟦 antipatterns      |
@@ -26,17 +26,48 @@
 | 🟨 generator         | 🟩 switch             | ⬜ compose            | ⬜️ Symbol           | 🟦 linter            |
 | 🟨 async function    | 🟨 new Error          | ⬜️ memoize            | 🟨 string parsing   | ⬜️ prettier          |
 | 🟨 call, bind, apply |                       | 🟦 factory            | 🟨 timers           | 🟦 unittest          |
-| 🟨 Array             |                       | 🟦 pool               | 🟨 EventEmitter     | 🟦 git               |
-| 🟨 instanceof        |                       | 🟦 wrapper            | 🟨 RegExp           | 🟦 github            |
+| 🟨 Array             |                       | 🟦 pool               | 🟨 EventEmitter     | 🟩 git               |
+| 🟨 instanceof        |                       | 🟦 wrapper            | 🟨 RegExp           | 🟩 github            |
 | 🟨 ...spread         |                       | 🟨 default parameters | 🟨 global           | 🟨 node.js           |
-| 🟨 ...rest           |                       |                       | 🟨 undefined        | 🟨 npm               |
-| 🟨 typeof            |                       |                       | 🟦 null             |                      |
+| 🟨 ...rest           |                       |                       | 🟨 undefined         | 🟨 npm               |
+| 🟨 typeof            |                       |                       | 🟦 null              |                      |
+
+## SQL
+
+| Basic                     | Commands           | Advance                  |
+| --------------------------| ------------------ | ------------------------ |
+| 🟩 DDL                   | 🟩 CREATE DATABASE | 🟦 loop statement        |
+| 🟩 DML                   | 🟩 SHOW DATABASES  | 🟦 PIVOT table           |
+| 🟦 DCL                   | 🟩 USE             | 🟦 materialized views    |
+| 🟦 TCL                   | 🟦 SOURCE          | 🟦 stored procedure      |
+| 🟩 data types            | 🟩 DROP DATABASE   | 🟦 user defined function |
+| 🟩 primary key           | 🟩 SHOW TABLES     | 🟦 while loop statement  |
+| 🟩 foreign key           | 🟩 CREATE TABLE    | 🟦 repeat loop statement |
+| 🟦 normalization         | 🟩 DROP TABLE      |                           |
+| 🟩 arichmetic operator   | 🟩 DESCRIBE        |                           |
+| 🟩 logical operator      | 🟩 INSERT          |                           |
+| 🟦 comprasion operator   | 🟩 UPDATE          |                           |
+| 🟩 agrigate functions    | 🟩 DELETE          |                           |
+| 🟩 LEFT JOIN             | 🟩 SELECT          |                           |
+| 🟩 RIGHT JOIN            | 🟩 SELECT DISTINCT |                           |
+| 🟩 FULL OUTER JOIN       | 🟩 WHERE           |                           |
+| 🟩 CROSS JOIN            | 🟩 GROUP BY        |                           |
+| 🟩 SELF JOIN             | 🟩 HAVING          |                           |
+| 🟦 sub-queries           | 🟩 ORDER BY        |                           |
+| 🟦 window functions      | 🟩 BETWEEN         |                           |
+|                          | 🟩 LIKE            |                           |
+|                          | 🟩 IN              |                           |
+|                          | 🟩 JOIN            |                           |
+|                          | 🟩 VIEW            |                           |
+|                          | 🟩 LIMIT           |                           |
+|                          | 🟦 ALTER TABLE     |                           |
+|                          | 🟦 SELECT TOP      |                           |
 
 ## Multi-paradigm programming
 
-| Theory                         | OOP basics            | Abstractions         | Patterns                 |
-|--------------------------------|-----------------------|----------------------|--------------------------|
-| 🟦 Procedural programming      | 🟩 constructor        | ⬜ struct, record    | 🟦 Singleton             |
+| Theory                         | OOP basics             | Abstractions         | Patterns                 |
+|--------------------------------|------------------------|----------------------|--------------------------|
+| 🟦 Procedural programming      | 🟩 constructor        | ⬜ struct, record    | 🟦 Singleton            |
 | 🟦 Imperative programming      | 🟩 new                | ⬜ Mutable state     |                          |
 | 🟦 Structured programming      | 🟩 Static method      | ⬜ Immutable state   |                          |
 | 🟦 Non-structured programming  | 🟩 Method             | ⬜ Enum              |                          |
@@ -55,12 +86,12 @@
 | 🟦 Multi-paradigm programming  | ⬜ Object form        |                      |                          |
 | ⬜ Metaprogramming             | 🟦 instance           |                      |                          |
 | ⬜ Actor model                 | ⬜ Introspection      |                      |                          |
-|                                | ⬜ Reflection         |                      |                          |
+|                                | ⬜ Reflection          |                      |                          |
 
 ## Asynchronous programming
 
-| Async contracts        | JavaScript & Node.js specific  | Theory              | Techniques               |
-|------------------------|--------------------------------|---------------------|--------------------------|
+| Async contracts        | JavaScript & Node.js specific   | Theory              | Techniques                |
+|------------------------|---------------------------------|---------------------|---------------------------|
 | 🟦 Callback-last       | 🟦 Timers                      | 🟦 Event Loop       | ⬜ async.js library      |
 | 🟦 Error-first         | 🟦 setImmediate                | 🟦 Async error      | ⬜ Async composition     |
 | 🟦 Promise             | 🟦 nextTick                    | 🟦 try..catch       | ⬜ Rx.js                 |
@@ -77,14 +108,14 @@
 | ⬜ Future              | 🟦 Promise hell                | 🟦 Dead locks       | 🟦 promisify             |
 | ⬜ Deferred            |                                | 🟦 Live locks       | ⬜ IPC                   |
 | 🟦 Observer            |                                | ⬜ Actor Model      | ⬜ Channel API           |
-| ⬜ Async Collector     |                                |                     | ⬜ Revealing Constructor |
-| ⬜ Coroutine           |                                |                     |                          |
-| ⬜ Goroutine           |                                |                     |                          |
+| ⬜ Async Collector     |                                |                      | ⬜ Revealing Constructor |
+| ⬜ Coroutine           |                                |                      |                          |
+| ⬜ Goroutine           |                                |                      |                          |
 
 ## Node.js and backend
 
-| Internals            | Theory                       | Network           | Technique        | Problems             |
-|----------------------|------------------------------|-------------------|------------------|----------------------|
+| Internals            | Theory                        | Network           | Technique         | Problems             |
+|----------------------|-------------------------------|-------------------|-------------------|----------------------|
 | 🟦 Nonblocking I/O   | 🟦 I/O bound tasks           | 🟦 HTTP(S)        | 🟦 Logging       | 🟦 Memory leaks      |
 | 🟦 Event Loop        | 🟦 CPU bound tasks           | 🟦 TCP/SSL        | 🟦 Testing       | 🟦 Resource leaks    |
 | 🟦 commonjs          | 🟦 Memory bound tasks        | 🟦 UDP            | ⬜ CI/CD         | 🟦 Blocking code     |
@@ -108,4 +139,4 @@
 | 🟦 crypto            | 🟦 CQS and CQRS              |                   |                  |                      |
 | ⬜ SharedArrayBuffer | 🟦 Event Sourcing            |                   |                  |                      |
 | 🟦 child_process     | 🟦 Shared memory             |                   |                  |                      |
-| 🟦 worker_threads    |                              |                   |                  |                      |
+| 🟦 worker_threads    |                               |                   |                  |                      |
