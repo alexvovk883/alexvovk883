@@ -9,28 +9,25 @@
 | 🟩 value             | 🟩 if                 | 🟩 recursion          | 🟩 array            | 🟦 refactoring       |
 | 🟩 identifier        | 🟩 loops              | 🟩 function           | 🟩 instance         | 🟦 code review       |
 | 🟩 variable          | 🟦 assignment         | 🟩 return             | 🟩 object           | 🟦 antipatterns      |
-| 🟩 constant          | 🟨 prototype          | 🟩 signature          | 🟩 collection       | 🟦 paradigm          |
-| 🟩 scalar            | 🟩 class              | 🟩 argument           | 🟩 hash table       | 🟦 algorithm         |
-| 🟩 literal           | 🟩 while              | 🟩 parameter          | 🟩 linked list      | 🟦 magic numbers     |
+| 🟩 constant          | 🟩 logical operators  | 🟩 signature          | 🟩 Vector           | 🟦 paradigm          |
+| 🟩 scalar            | 🟩 class              | 🟩 argument           | 🟩 HashTable        | 🟦 algorithm         |
+| 🟩 literal           | 🟩 while              | 🟩 parameter          | 🟩 Linked List      | 🟦 magic numbers     |
 | 🟦 expression        | 🟩 do..while          | 🟩 pure function      | 🟦 queue            | 🟦 hardcode          |
 | 🟦 heap              | 🟩 for                | 🟩 lambda             | 🟦 stack            | 🟦 complexity        |
-| 🟩 type              | 🟨 for..in            | 🟦 side effects       | 🟦 deque            | 🟦 decomposition     |
-| 🟩 primitive types   | 🟨 for..of            | 🟦 closure            | 🟦 serialization    | ⬜️ spaghetti         |
-| 🟦 reference         | 🟨 for await          | 🟦 partial            | 🟦 mixin, extend    | ⬜️ silver bullet     |
-| 🟦 flag              | 🟩 throw              | ⬜️ curry              | 🟨 iterator         | ⬜️ not invented here |
-| 🟦 lexical scope     | 🟩 try..catch         | 🟦 chaining           | 🟨 typed arrays     | 🟦 dead code         |
-| 🟦 code block        | 🟦 equality operators | 🟦 higher order       | 🟨 Map              | 🟦 unreachable code  |
-| 🟨 Object            | 🟩 logical operators  | 🟦 callback           | 🟨 Set              | 🟦 duplicate code    |
-| 🟨 this              | 🟦 bitwise operators  | 🟦 listener           | ⬜️ weak collections | 🟦 exception         |
-| 🟨 arrow function    | 🟩 break, continue    | ⬜️ pipe               | ⬜️ Proxy            | 🟦 return early      |
-| 🟨 generator         | 🟩 switch             | ⬜ compose            | ⬜️ Symbol           | 🟦 linter            |
-| 🟨 async function    | 🟨 new Error          | ⬜️ memoize            | 🟨 string parsing   | ⬜️ prettier          |
-| 🟨 call, bind, apply |                       | 🟦 factory            | 🟨 timers           | 🟦 unittest          |
-| 🟨 Array             |                       | 🟦 pool               | 🟨 EventEmitter     | 🟩 git               |
-| 🟨 instanceof        |                       | 🟦 wrapper            | 🟨 RegExp           | 🟩 github            |
-| 🟨 ...spread         |                       | 🟨 default parameters | 🟨 global           | 🟨 node.js           |
-| 🟨 ...rest           |                       |                       | 🟨 undefined         | 🟨 npm               |
-| 🟨 typeof            |                       |                       | 🟦 null              |                      |
+| 🟩 type              | 🟩 switch             | 🟦 side effects       | 🟦 deque            | 🟦 decomposition     |
+| 🟩 primitive types   | 🟦 bitwise operators  | 🟦 closure            | 🟦 serialization    | 🟩 github            |
+| 🟦 reference         | 🟩 break, continue    | 🟦 partial            | 🟦 mixin, extend    | 🟩 git               |
+| 🟦 flag              | 🟩 throw              | 🟦 wrapper            | 🟦 null             | 🟦 unittest          |
+| 🟦 lexical scope     | 🟩 try..catch         | 🟦 chaining           | 🟦 Arrays List      | 🟦 dead code         |
+| 🟦 code block        | 🟦 equality operators | 🟦 higher order       | 🟦                  | 🟦 unreachable code  |
+|                      |                        | 🟦 callback           | 🟦 PriorityQueue    | 🟦 duplicate code    |
+|                      |                        | 🟦 listener           | 🟦 ArrayDeque       | 🟦 exception         |
+|                      |                        | 🟦 pool               | 🟦 HashSet          | 🟦 return early      |
+|                      |                        | 🟦 factory            | 🟦 LinkedHasSet     | 🟦 linter            |
+|                      |                        |                        | 🟦 TreeSet          |                      |
+|                      |                        |                        | 🟦 HashMap          |                      |
+|                      |                        |                        | 🟦 LinkedHashMap    |                      |
+|                      |                        |                        | 🟦 TreeMap          |                      |         
 
 ## SQL
 
@@ -62,6 +59,27 @@
 |                          | 🟩 LIMIT           |                           |
 |                          | 🟦 ALTER TABLE     |                           |
 |                          | 🟦 SELECT TOP      |                           |
+
+## Java backend/web programming
+
+| Patterns/Best Practices| Database in Java           | Web                  | Other              |
+|------------------------|----------------------------|----------------------|--------------------|
+| 🟦 Builder             | 🟩 JDBC                    | 🟦 Tomcat container | 🟦 XML             |
+| 🟦 Facade              | 🟩 Mysql syntax            | 🟦 Servlets         | 🟦 JUnit           |
+| 🟦 Singleton           | 🟦 Transactions            | 🟦 JSP              | 🟦 Mockito         |
+| 🟦 Abstract factory    | 🟦 Prepared statement      | 🟦 HttpFilter       | 🟦 REST API        |
+| 🟦 Strategy            | 🟦 DAO                     | 🟦 ServletContext   | 🟦 Stream API      |
+| 🟦 Adapter             | 🟦 DB normalization forms  | 🟦 HttpSession      | 🟦 Logging         |
+| 🟦 Observer            | 🟦 Connection class        | 🟦 HTTP protocol    | 🟩 Javadoc         |
+| 🟦 Decorator           | 🟦 JPA                     | 🟦 Request/Response |
+| 🟦 Strategy            |
+| 🟦 Bridge              |
+| 🟦 Command             |
+| 🟦 Interpreter         |
+| 🟦 Flyweight           |
+| 🟦 Memento             |
+| 🟦 SOLID               |
+| 🟦 GRASP               |
 
 ## Multi-paradigm programming
 
